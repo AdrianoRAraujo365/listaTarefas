@@ -1,0 +1,44 @@
+/* ... (Seu código styles.css original) ... */
+
+li {
+  background-color: #f3f2f1;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+  /* Adicionado para suportar o span de categoria */
+  position: relative; 
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: #d2e3fc;
+  color: #555;
+}
+
+.tarefa-texto {
+    flex-grow: 1; /* Permite que o texto cresça */
+}
+
+.tarefa-categoria {
+    font-size: 0.8em;
+    color: #0078d4; /* Cor do estilo Microsoft */
+    background-color: #e6f1fc;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  color: #d83b01;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px; /* Espaçamento entre a categoria e o botão de delete */
+}
+
